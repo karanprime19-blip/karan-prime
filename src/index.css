@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Montserrat', 'Space Grotesk', sans-serif;
+    font-weight: 800;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-stylish {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-syne {
+    font-family: 'Syne', 'Montserrat', sans-serif;
+  }
+}
+
+/* Bold Typography Outline Text Effect */
+.outline-text {
+  -webkit-text-stroke: 1.5px #3f3f46;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.outline-text:hover {
+  -webkit-text-stroke: 1.5px #00FF00;
+  color: #00FF00;
+}
+
+.outline-text-static {
+  -webkit-text-stroke: 1px #333333;
+  color: #18181b;
+}
+
+/* Neon Green & High-Contrast Shadow/Glows */
+.glow-neon {
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+
+.glow-neon-sm {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.glow-neon-lg {
+  box-shadow: 0 0 35px rgba(0, 255, 0, 0.45);
+}
+
+.glow-text-neon {
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00FF00;
+}
+
